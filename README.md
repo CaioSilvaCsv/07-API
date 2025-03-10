@@ -18,7 +18,9 @@ Esse site funciona da seguinte forma. Na [tela principal](https://veriphone-api.
 Na tela principal é solicitado via GET e na aleatória é via POST.
 
 ---
+
 ### Créditos
+
 Tive como referência o material postado na atividade, principalmente o [video de Matheus Battisti](https://www.youtube.com/watch?v=qIGYM4S8x50).
 
 ### Licença
