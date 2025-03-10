@@ -1,4 +1,3 @@
-require("dotenv").config();
 const veriphone_api_key = process.env.VERIPHONE_API;
 
 
