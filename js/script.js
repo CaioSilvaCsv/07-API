@@ -1,4 +1,4 @@
-const veriphone_api_key = process.env.VERIPHONE_API;
+const veriphone_api_key = "F0AEA3BD668C40A4B6BDCF53A6895960";
 
 
 const resultado = document.getElementById('resultado');
@@ -8,17 +8,17 @@ const geraAleButton = document.getElementById('gerar-ale');
 const telefone = document.getElementById('telefone');
 const getVerifica = document.getElementById('verificar-num');
 
-function url(api_key, telefone) {
-    return `https://api.veriphone.io/v2/verify?phone=${encodeURIComponent(telefone)}&key=${api_key}`;
+function url( telefone) {
+    return `https://api.veriphone.io/v2/verify?phone=${encodeURIComponent(telefone)}&key=${veriphone_api_key}`;
 }
-function urlAleatorio(api_key, type, country) {
-    return `https://api.veriphone.io/v2/example?type=${type}&country_code=${country}&key=${api_key}`;
+function urlAleatorio( type, country) {
+    return `https://api.veriphone.io/v2/example?type=${type}&country_code=${country}&key=${veriphone_api_key}`;
 }
 
 async function getNumber(telefone) {
 
     try {
-        const response = await fetch(url(veriphone_api_key, telefone));
+        const response = await fetch(url(telefone));
         if (!response.ok) { // Status 200-299: Sucesso
             let errorMessage = `Erro HTTP ${response.status}: ${response.statusText}`;
             if (response.status === 400) errorMessage = "Erro 400: Requisição Inválida.";
@@ -37,7 +37,7 @@ async function getNumber(telefone) {
 }
 
 async function numAleatorio(type, country) {
-    fetch(urlAleatorio(veriphone_api_key, type, country), {
+    fetch(urlAleatorio(type, country), {
         method: 'POST',//Para fazer o post, porém não passa mais nada.
     })
         .then(response => {
