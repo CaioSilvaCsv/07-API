@@ -1,5 +1,4 @@
-import * as dotenv from 'dotenv';
-dotenv.config();
+require("dotenv").config();
 const veriphone_api_key = process.env.VERIPHONE_API;
 
 
