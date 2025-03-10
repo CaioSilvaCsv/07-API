@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Numero</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Verifica telefone</a>
+        <a href="aleatorio.html">Numero aleatório de um país</a>
+    </nav>
+
+    <main>
+        <div id="form">
+            <p>Configure de onde quer o numero aletório.</p>
+            <form>
+                <label for="country-select">
+                    <select name="country-select" id="country-select">
+                        <option value="">Selecione um país</option>
+                    </select>
+                </label>
+                <label for="type-select">
+                    <select name="type-select" id="type-select">
+                        <option value="">Selecione um tipo de telefone</option>
+                    </select>
+                </label>
+            </form>
+            <button id="gerar-ale">Gerar numero aleatório</button>
+        </div>
+        <div id="resultado">
+            <div class="card">
+                <a href="tel:+93 23 456 7890">Tel: +93 23 456 7890</a>
+                <div class="prefix">
+                    <p>Prefixo: 93 </p>
+                    <img src="https://veriphone.io/svg/af.svg">
+                    <p>Número local: 023 456 7890</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

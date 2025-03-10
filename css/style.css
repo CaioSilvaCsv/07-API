@@ -1,0 +1,85 @@
+*{
+    background-color: white;
+}
+
+nav > a, button{
+    background-color: #0035c7;
+    padding: 1em;
+    border-radius: .6em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav > a:hover, button:hover{
+    scale: .9;
+    background-color: #005dc7;
+}
+nav{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+main{
+    justify-items: center;
+}
+
+#form {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #000000;
+    border-radius: .6em;
+    justify-items: center;
+    width: 30em;
+}
+
+button{
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.prefix img, .flag img{
+    width: 2em;
+    margin: .3em;
+}
+
+select{
+    height: 2em;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#telefone{
+    border: 1px solid;
+    border-radius: .4em;
+    justify-items: center;;
+}
+
+.prefix{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flag{
+    display: flex;
+    flex-direction: row;
+}
+
+.card a{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+.card{
+    background-color: #005dc7;
+    color: #ffffff;
+    width: 30em;
+    padding: .5em;
+    border-radius: .6em;  
+    margin: .3em;  
+}
+
+a, p, .prefix, img, .flag{
+    background-color: #00000000;
+}

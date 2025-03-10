@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Numero</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Verifica telefone</a>
+        <a href="aleatorio.html">Numero aleatório de um país</a>
+    </nav>
+    <main>
+        <div id="form">
+            <h2>Verifica número</h2>
+            <form>
+                <label for="telefone">Digite seu telefone: </label>
+                <input type="tel" name="telefone" id="telefone" placeholder="+xx xx xxxx xxxx" autocomplete="off"
+                    required>
+            </form>
+            <button id="verificar-num">Verifica número</button>
+        </div>
+        <div id="resultado">
+            <div class="card">
+                <a href="tel:+5538988216311">+5538988216311</a>
+                <p>Tipo: mobile</p>
+                <div class="flag">
+                    <p>Região: Minas Gerais, </p>
+                    <p class="country">Brazil </p>
+                    <img src="https://veriphone.io/svg/br.svg" alt="Brazil">
+                </div>
+                <p>Número Internacional: +55 38 98821-6311</p>
+                <p>Número Local: (38) 98821-6311</p>
+                <p class="operadora">Operadora: Oi</p>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
